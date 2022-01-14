@@ -10,6 +10,7 @@ viewer = [0.0, 0.0, 10.0]
 
 R = 10
 
+obr = 1.0
 thetaX = 0.0
 thetaY = 0.0
 
@@ -92,17 +93,25 @@ def example_object():
 
 
 def render(time):
-    global thetaX, thetaY, scaleX, scaleY, R
+    global thetaX, thetaY, scaleX, scaleY, R, obr
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     glLoadIdentity()
 
     gluLookAt(viewer[0], viewer[1], viewer[2],
-              0.0, 0.0, 0.0, 0.0, 1.0, 0.0)
+              0.0, 0.0, 0.0, 0.0, obr, 0.0)
 
     if left_mouse_button_pressed:
-        thetaX += delta_x * pix2angle
+        #thetaX += delta_x * pix2angle
+        math.fmod(thetaX, 360)
         thetaY += delta_y * pix2angle
+        thetaY = math.fmod(thetaY, 360)
+        print(thetaY)
+        if 270 > abs(thetaY) >= 90:
+            obr = -1
+        else:
+            obr = 1
+
         # glRotatef(thetaX, 0.0, 1.0, 0.0)
         # glRotatef(thetaY, 0.0, 0.0, 1.0)
 
@@ -115,6 +124,8 @@ def render(time):
     table = camera_coordinates()
     for i in range(len(table)):
         viewer[i] = table[i]
+
+
 
     axes()
     example_object()
