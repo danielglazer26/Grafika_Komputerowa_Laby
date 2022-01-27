@@ -181,8 +181,6 @@ def keyboard_key_callback(window, key, scancode, action, mods):
         texture_on = not texture_on
 
 
-
-
 def mouse_motion_callback(window, x_pos, y_pos):
     global delta_x
     global mouse_x_pos_old

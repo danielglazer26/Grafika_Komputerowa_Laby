@@ -45,7 +45,6 @@ def compile_shaders():
         in vec4 vertex_color;
 
         void main(void) {
-            color = vec4(0.7, 0.7, 0.7, 1.0);
             color = vertex_color;
         }
     """

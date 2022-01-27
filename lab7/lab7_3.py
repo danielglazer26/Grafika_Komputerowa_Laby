@@ -191,7 +191,7 @@ def render(time):
     V_matrix = glm.lookAt(
         glm.vec3(0.0, 0.0,  20.0),
         glm.vec3(0.0, 0.0, 0.0),
-        glm.vec3(0.0, 20.0, 0.0)
+        glm.vec3(0.0, 1.0, 0.0)
     )
 
     glUseProgram(rendering_program)
@@ -206,7 +206,6 @@ def render(time):
 
     for i in range(10):
         M_matrix = glm.translate(M_matrix, glm.vec3(1.0, -10.0, 0.0))
-        glUniformMatrix4fv(M_location, 1, GL_FALSE, glm.value_ptr(M_matrix))
 
         for j in range(10):
             M_matrix = glm.translate(M_matrix, glm.vec3(0.0, 1.0, 0.0))
