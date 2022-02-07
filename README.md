@@ -19,3 +19,19 @@ Repozytorium zawierające laboratoria z grafiki komputerowej.
 * obracanie obiektu wokół osi X
 * skalowanie obiektu za pomocą drugiego przycisku myszy
 * poruszanie kamerą wokół modelu
+* usprawnienie poruszania kamerą wokół modelu (bez przeskoku)
+
+## lab5
+* wprowadzenie drugiego źródła światła
+* dynamiczna zmiana koloru światła
+* poruszanie źródłami światła wraz z ich wizualizacją
+
+## lab6
+* oteksturowanie kwadratu
+* oteksturowanie ostrosłupa
+* stworzenia własnej tekstury
+* wprowadzenie możliwości przełączenia tekstury
+
+## lab7
+* modyfikacja koloru bryły
+* tworzenie wielu kopi obiektu
