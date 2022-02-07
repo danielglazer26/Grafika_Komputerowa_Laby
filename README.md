@@ -1,6 +1,6 @@
 # Grafika komputerów laboratoria
 
-Repozytorium zawierające laboratoria z grafiki komputerowej.
+Repozytorium zawierające laboratoria z grafiki komputerowej w OpenGL.
 
 ## lab2
 
