@@ -1,8 +1,6 @@
-# Computer Graphics Labs [PL](https://github.com/danielglazer26/UP_lab/blob/main/README.pl.md)
+# Computer Graphics Labs [PL](https://github.com/danielglazer26/Grafika_Komputerowa_Laby/blob/main/README.pl.md)
 
 A repository containing labs on computer graphics in OpenGL.
-
-
 
 ## lab2
 * drawing a rectangle
