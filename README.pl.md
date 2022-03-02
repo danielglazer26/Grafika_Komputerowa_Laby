@@ -1,4 +1,4 @@
-# Grafika komputerów laboratoria
+# Grafika komputerów laboratoria [ENG](https://github.com/danielglazer26/Grafika_Komputerowa_Laby)
 
 Repozytorium zawierające laboratoria z grafiki komputerowej w OpenGL.
 
